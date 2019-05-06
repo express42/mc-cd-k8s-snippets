@@ -369,7 +369,7 @@ server:
     ## Must be provided if Ingress is enabled
     ##
     hosts:
-     - reddit-prometheus
+     - "*"
 
     ## Prometheus server Ingress TLS configuration
     ## Secrets must be manually created in the namespace
