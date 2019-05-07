@@ -1,0 +1,19 @@
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    datasources:
+    - name: Prometheus
+      type: prometheus
+      url: http://prom-prometheus-server
+      access: proxy
+      isDefault: true
+
+service:
+  type: LoadBalancer
+
+ingress:
+   enabled: true
+   hosts:
+    - ""
+
+adminPassword: admin
